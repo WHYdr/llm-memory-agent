@@ -25,6 +25,7 @@ The project is designed as a learning-oriented LLM system for studying:
 5. LLM generates a response
 6. Important information is stored into memory
 
+
 ## Current Functionality
 - [x] Basic chat interface
 - [ ] Long-term memory
@@ -50,21 +51,15 @@ The system currently contains the following modules:
 - Retrieval Module
   Searches relevant memories from the vector database.
 
-User Input
-    ↓
-Embedding
-    ↓
-Vector Search
-    ↓
-Retrieve Memories
-    ↓
-Prompt Assembly
-    ↓
-LLM
-    ↓
-Response
-    ↓
-Store New Memory
+```mermaid
+graph TD
+    A[User Input] --> B[Embedding]
+    B --> C[Vector Search]
+    C --> D[Memory Retrieval]
+    D --> E[Prompt Assembly]
+    E --> F[LLM Response]
+    F --> G[Memory Storage]
+```
 
 ## Tech Stack
 - Python
