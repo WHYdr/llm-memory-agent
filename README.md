@@ -1,8 +1,5 @@
 # llm-memory-agent
 
-## Before starting, a few words:
-Now is my second year of my undergraduate life hh. I am now trying to build an agent with memory. To tell the truth I know very little about Agent Building and EVEN ML/DL hhh. Anyway this try will force me to learn more about ML and make me better at python coding. Let's do it!
-
 ## Project Goal
 This project aims to build a long-term memory AI agent.
 
@@ -18,6 +15,15 @@ The project is designed as a learning-oriented LLM system for studying:
 - retrieval augmented generation (RAG)
 - agent workflows
 - long-context interaction
+
+## Workflow
+
+1. User sends a message
+2. The system embeds the message
+3. Relevant memories are retrieved
+4. Context is injected into the prompt
+5. LLM generates a response
+6. Important information is stored into memory
 
 ## Current Functionality
 - [x] Basic chat interface
