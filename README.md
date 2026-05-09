@@ -1,4 +1,5 @@
 # llm-memory-agent
+A long-term memory AI agent with persistent semantic memory and retrieval-augmented context management.
 
 ## Project Goal
 This project aims to build a long-term memory AI agent.
@@ -40,7 +41,7 @@ The system currently contains the following modules:
   Handles user interaction.
 
 - LLM Module
-  Use Ollama run local LLM model.
+  Connects to locally deployed LLMs through Ollama.
 
 - Memory Module
   Stores and retrieves conversation history.
@@ -54,16 +55,16 @@ The system currently contains the following modules:
 ```mermaid
 graph TD
     A[User Input] --> B[Embedding]
-    B --> C[Vector Search]
-    C --> D[Memory Retrieval]
-    D --> E[Prompt Assembly]
-    E --> F[LLM Response]
-    F --> G[Memory Storage]
+    B --> C[Vector Database Retrieval]
+    C --> D[Prompt Assembly]
+    D --> E[LLM Response]
+    E --> F[Memory Storage]
 ```
 
 ## Tech Stack
 - Python
-- Ollama, Llama/Qwen
+- Ollama
+- Llama/Qwen
 - LangChain
 - ChromaDB
 - HuggingFace Transformers
@@ -88,8 +89,8 @@ graph TD
 - Multi-session memory
 
 ### V4
-- Autonomous planning
-- Multi-agent collaboration
+- Basic task planning
+- Experimental multi-agent collaboration
 
 ## TO-DO
 - [ ] Set up project structure
@@ -98,6 +99,22 @@ graph TD
 - [ ] Save conversation history
 - [ ] Add embedding model
 - [ ] Integrate ChromaDB
+
+## Design Philosophy
+This project focuses on exploring memory-centric LLM agent architectures.
+
+Instead of relying solely on larger foundation models, the system investigates how persistent memory, retrieval mechanisms, and modular workflows can enhance long-context interaction and agent capability.
+
+## Future Research Directions
+
+Possible future directions include:
+
+- Memory compression
+- Long-context optimization
+- Reflection and self-evaluation
+- Tool-augmented reasoning
+- Persistent agent identity
+- Multi-agent interaction
 
 ## How to Run
 Coming soon.
