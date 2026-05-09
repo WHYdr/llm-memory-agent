@@ -1,6 +1,6 @@
 # llm-memory-agent
 
-## Before starting
+## Before starting, a few words:
 Now is my second year of my undergraduate life hh. I am now trying to build an agent with memory. To tell the truth I know very little about Agent Building and EVEN ML/DL hhh. Anyway this try will force me to learn more about ML and make me better at python coding. Let's do it!
 
 ## Project Goal
@@ -21,7 +21,6 @@ The project is designed as a learning-oriented LLM system for studying:
 
 ## Current Functionality
 - [x] Basic chat interface
-- [x] API connection
 - [ ] Long-term memory
 - [ ] Vector database retrieval
 - [ ] Conversation summarization
@@ -34,7 +33,7 @@ The system currently contains the following modules:
   Handles user interaction.
 
 - LLM Module
-  Connects to the language model API.
+  Use Ollama run local LLM model.
 
 - Memory Module
   Stores and retrieves conversation history.
@@ -47,7 +46,7 @@ The system currently contains the following modules:
 
 ## Tech Stack
 - Python
-- OpenAI API / Gemini API
+- Ollama, Llama/Qwen
 - LangChain
 - ChromaDB
 - HuggingFace Transformers
@@ -58,7 +57,7 @@ The system currently contains the following modules:
 
 ### V1
 - Basic chat system
-- API integration
+- Local LLM integration
 - Conversation storage
 
 ### V2
@@ -77,7 +76,7 @@ The system currently contains the following modules:
 
 ## TO-DO
 - [ ] Set up project structure
-- [ ] Connect LLM API
+- [ ] LLM integration
 - [ ] Build chat loop
 - [ ] Save conversation history
 - [ ] Add embedding model
