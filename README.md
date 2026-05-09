@@ -50,6 +50,22 @@ The system currently contains the following modules:
 - Retrieval Module
   Searches relevant memories from the vector database.
 
+User Input
+    ↓
+Embedding
+    ↓
+Vector Search
+    ↓
+Retrieve Memories
+    ↓
+Prompt Assembly
+    ↓
+LLM
+    ↓
+Response
+    ↓
+Store New Memory
+
 ## Tech Stack
 - Python
 - Ollama, Llama/Qwen
