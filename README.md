@@ -93,10 +93,10 @@ graph TD
 - Experimental multi-agent collaboration
 
 ## TO-DO
-- [ ] Set up project structure
-- [ ] LLM integration
-- [ ] Build chat loop
-- [ ] Save conversation history
+- [x] Set up project structure
+- [x] LLM integration
+- [x] Build chat loop
+- [x] Save conversation history
 - [ ] Add embedding model
 - [ ] Integrate ChromaDB
 
@@ -117,4 +117,4 @@ Possible future directions include:
 - Multi-agent interaction
 
 ## How to Run
-Coming soon.
+python app/main.py
