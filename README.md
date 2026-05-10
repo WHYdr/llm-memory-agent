@@ -93,12 +93,11 @@ graph TD
 - Experimental multi-agent collaboration
 
 ## TO-DO
-- [x] Set up project structure
-- [x] LLM integration
-- [x] Build chat loop
-- [x] Save conversation history
-- [ ] Add embedding model
-- [ ] Integrate ChromaDB
+- [x] main.py, llm.py
+- [ ] conversation storage, memory.py
+- [ ] embeadding.py
+- [ ] ChromaDB retrieval.py 
+- [ ] Prompt assembly
 
 ## Design Philosophy
 This project focuses on exploring memory-centric LLM agent architectures.

@@ -1,28 +1,16 @@
-from ollama import chat
+from llm import generate_response
 
 messages = []
 
+# to build a chat loop
 while True:
 
     userinput = input("User: ")
-
     if userinput == "exit":
         break
 
     messages.append({'role': "user", 'content': userinput})
 
-    stream = chat(
-        model = "qwen2.5:7b-instruct",
-        messages = messages,
-        stream = True,
-    )
-
-    reply = ""
-    print("Assistant: ", end="")
-    for chunk in stream:
-        reply += chunk.message.content
-        print(chunk.message.content, end="", flush=True)
-    print('\n\n')
+    reply = generate_response(messages)
     
-
     messages.append({'role': "assistant", 'content': reply})
